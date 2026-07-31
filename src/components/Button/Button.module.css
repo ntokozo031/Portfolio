@@ -1,0 +1,23 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primary {
+  background: var(--color-foreground, #171717);
+  color: var(--color-background, #ffffff);
+}
+
+.secondary {
+  background: transparent;
+  border-color: var(--color-border, #e5e7eb);
+  color: inherit;
+}

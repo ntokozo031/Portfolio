@@ -1,0 +1,27 @@
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  color: var(--color-muted, #6b7280);
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  color: inherit;
+  text-decoration: underline;
+}
