@@ -14,8 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ntokozo Ngcobo | Portfolio",
-  description: "Software engineer portfolio — projects, background, and contact.",
+  title: "Ntokozo Ngcobo | Full-Stack Software Developer",
+  description:
+    "Portfolio of Ntokozo Ngcobo — Full-Stack Software Developer specializing in React, Node.js, Flutter, and cloud platforms (AWS, Firebase, Azure).",
+  openGraph: {
+    title: "Ntokozo Ngcobo | Full-Stack Software Developer",
+    description:
+      "Full-Stack Software Developer with 3+ years of experience across fintech, healthcare, logistics, and government sectors.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

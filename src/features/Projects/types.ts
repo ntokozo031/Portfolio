@@ -1,1 +1,1 @@
-export type { Project } from "@/types";
+export type { ProjectItem } from "@/lib/data";

@@ -1,17 +1,118 @@
-.container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+.section {
+  padding: 4rem 1.5rem;
 }
 
-.title {
-  font-size: 2rem;
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.summary {
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+.factList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.fact {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.factLabel {
+  color: var(--color-muted);
+}
+
+.factValue {
+  font-weight: 600;
+  text-align: right;
+}
+
+.cardsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.paragraph {
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  color: var(--color-muted, #6b7280);
+.eduItem {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.eduItem:last-child {
+  border-bottom: none;
+}
+
+.eduDegree {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.eduMeta {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-top: 0.15rem;
+}
+
+.certList {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.certItem {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.certItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
 }

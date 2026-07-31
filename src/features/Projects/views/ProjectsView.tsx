@@ -1,17 +1,22 @@
-import { getProjects } from "../api";
+import { SectionHeading } from "@/components/SectionHeading/SectionHeading";
+import { PROJECTS } from "@/lib/data";
 import { ProjectCard } from "../components/ProjectCard/ProjectCard";
 import styles from "../css/Projects.module.css";
 
-export async function ProjectsView() {
-  const projects = await getProjects();
-
+export function ProjectsView() {
   return (
-    <section className={styles.container}>
-      <h1 className={styles.title}>Projects</h1>
-      <div className={styles.grid}>
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+    <section id="projects" className={styles.section}>
+      <div className={styles.inner}>
+        <SectionHeading
+          eyebrow="Projects"
+          title="Selected Work"
+          description="Production systems spanning fintech, healthcare, logistics, and government sectors."
+        />
+        <div className={styles.grid}>
+          {PROJECTS.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   );
