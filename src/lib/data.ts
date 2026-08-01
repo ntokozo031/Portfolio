@@ -15,7 +15,7 @@ export const PROFILE = {
     "Versatile Full-Stack Software Developer with 3+ years of hands-on experience delivering production-ready web and mobile applications across fintech, healthcare, logistics, and government sectors. Holds a Bachelor of ICT Honours from Durban University of Technology, with strong command of modern JavaScript frameworks, mobile development, relational and NoSQL databases, and cloud platforms.",
   tagline:
     "I build production-ready web & mobile applications — from requirements to deployment.",
-  availability: "Available for contract & remote engagements",
+  availability: "Open to new opportunities",
 };
 
 export const NAV_LINKS = [

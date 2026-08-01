@@ -11,9 +11,9 @@ export function ContactView() {
         <div className={styles.card}>
           <h2 className={styles.title}>Let&apos;s Build Something</h2>
           <p className={styles.paragraph}>
-            {PROFILE.availability}. Whether it&apos;s a full product build, a
-            focused contract engagement, or just a technical chat — I&apos;d
-            love to hear from you.
+            {PROFILE.availability}. Whether it&apos;s a full-time role, a
+            graduate programme, a contract engagement, or just a technical
+            chat — I&apos;d love to hear from you.
           </p>
           <div className={styles.actions}>
             <Button href={`mailto:${PROFILE.email}`} external>
