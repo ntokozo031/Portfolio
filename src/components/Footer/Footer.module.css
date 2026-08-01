@@ -39,10 +39,3 @@
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
-
-@media (min-width: 640px) {
-  .inner {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}

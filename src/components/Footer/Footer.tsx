@@ -10,7 +10,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <p className={styles.copy}>
-          © {new Date().getFullYear()} {PROFILE.name}. Built with Next.js &amp; Tailwind CSS.
+          © {new Date().getFullYear()} {PROFILE.name}
         </p>
         <div className={styles.socials}>
           {SOCIAL_LINKS.map((social) => {
